@@ -10,6 +10,11 @@ addBtn.addEventListener("click", function () {
         return;
     }
 
+    if (taskText.length > 37) {
+    alert("Task cannot be more than 37 characters!");
+    return;
+  }
+
     let li = document.createElement("li");
     li.innerText = taskText;
 
