@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(#1190cb, #fc9425);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-container {
+    background: linear-gradient(#6a11cb, #2575fc);
+    width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.525);
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.input-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+#taskInput {
+    width: 75%;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+}
+
+#taskInput:focus {
+    outline: none;
+}
+
+#addBtn {
+    background: #2575fc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addBtn:hover {
+    background: #0b53e3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.525);
+}
+
+ul {
+    list-style: none;
+    margin-top: 50px;
+    margin-left: -40px;
+}
+
+li {
+    font-family: "Roboto Slab", serif;
+    text-transform: capitalize;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background: #00ff8c;
+}
+
+.deleteBtn {
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
